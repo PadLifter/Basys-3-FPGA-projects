@@ -28,8 +28,7 @@ module top(
     output wire led3
     );
     
-    assign led0 = sw[0];
-    assign led1 = sw[1];
+    assign led0 = sw[0] & sw[1];
     assign led2 = sw[2];
     assign led3 = sw[3];
     

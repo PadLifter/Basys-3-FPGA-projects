@@ -70,6 +70,8 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 1
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -99,6 +101,8 @@ read_xdc C:/git/Basys-3-FPGA-projects/LED_exercise/LED_exercise.srcs/constrs_1/i
 set_property used_in_implementation false [get_files C:/git/Basys-3-FPGA-projects/LED_exercise/LED_exercise.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental C:/git/Basys-3-FPGA-projects/LED_exercise/LED_exercise.srcs/utils_1/imports/synth_1/top.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
