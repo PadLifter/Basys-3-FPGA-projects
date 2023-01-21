@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date             : Thu Jan 19 11:46:23 2023
+| Date             : Sat Jan 21 14:34:58 2023
 | Host             : SBOOKLK running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 2.254        |
+| Total On-Chip Power (W)  | 10.433       |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 2.176        |
-| Device Static (W)        | 0.077        |
+| Dynamic (W)              | 10.286       |
+| Device Static (W)        | 0.147        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 73.7         |
-| Junction Temperature (C) | 36.3         |
+| Max Ambient (C)          | 32.8         |
+| Junction Temperature (C) | 77.2         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -55,10 +55,10 @@ Table of Contents
 | Slice Logic    |     0.001 |        3 |       --- |             --- |
 |   LUT as Logic |     0.001 |        1 |     20800 |           <0.01 |
 |   Others       |     0.000 |        2 |       --- |             --- |
-| Signals        |     0.018 |        5 |       --- |             --- |
-| I/O            |     2.157 |        8 |       106 |            7.55 |
-| Static Power   |     0.077 |          |           |                 |
-| Total          |     2.254 |          |           |                 |
+| Signals        |     0.068 |       16 |       --- |             --- |
+| I/O            |    10.216 |       30 |       106 |           28.30 |
+| Static Power   |     0.147 |          |           |                 |
+| Total          |    10.433 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -68,16 +68,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.050 |       0.036 |      0.014 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.091 |       0.078 |      0.013 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.607 |       0.606 |      0.001 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.201 |       0.130 |      0.071 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.392 |       0.372 |      0.019 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     2.876 |       2.875 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccbram   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.002 |       0.000 |      0.002 |       NA    | Unspecified | NA         |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |       NA    | Unspecified | NA         |
@@ -135,7 +135,7 @@ Table of Contents
 +------+-----------+
 | Name | Power (W) |
 +------+-----------+
-| top  |     2.176 |
+| top  |    10.286 |
 +------+-----------+
 
 
