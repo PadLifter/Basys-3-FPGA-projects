@@ -24,10 +24,10 @@ module top(
     
     assign led0 = sw[0] & sw[1];
     
-    assign led2 = sw[2];
-    assign led3 = sw[3];
-    assign led4 = sw[4];
-    assign led5 = sw[5];
+    assign led2 = sw[2] | sw[3];
+    
+    assign led4 = ~sw[4] | ~sw[5];
+   
     assign led6 = sw[6];
     assign led7 = sw[7];
     assign led8 = sw[8];
