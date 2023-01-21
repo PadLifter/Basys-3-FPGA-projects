@@ -28,12 +28,13 @@ module top(
     
     assign led4 = ~sw[4] | ~sw[5];
    
-    assign led6 = sw[6];
-    assign led7 = sw[7];
-    assign led8 = sw[8];
-    assign led9 = sw[9];
-    assign led10 = sw[10];
-    assign led11 = sw[11];
+    assign led6 = ~sw[6] & ~sw[7];
+     
+    assign led8 = sw[8] ^ sw[9];
+ 
+    assign led10 = ~sw[10] & ~sw[11];
+  //CREATE XNOR  assign led11 = sw[12] ? sw[13];
+    
     assign led12 = sw[12];
     assign led13 = sw[13];
     assign led14 = sw[14];
