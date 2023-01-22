@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 
 //Leevi Kinnunen
-//All switches assigned test
+//Operations exercise
 
 module top(
     input wire [14:0] sw,
@@ -22,21 +22,25 @@ module top(
     output wire led14
     );
     
+    //AND - operation
     assign led0 = sw[0] & sw[1];
     
+    //OR - operation
     assign led2 = sw[2] | sw[3];
     
+    //NAND - operation
     assign led4 = ~sw[4] | ~sw[5];
    
+    //NOR - operation
     assign led6 = ~sw[6] & ~sw[7];
      
+    //XOR - operation
     assign led8 = sw[8] ^ sw[9];
  
-    assign led10 = ~sw[10] & ~sw[11];
-  //CREATE XNOR  assign led11 = sw[12] ? sw[13];
+    //XNOR - operation
+    assign led10 = !(sw[10] ^ sw[11]);
     
-    assign led12 = sw[12];
-    assign led13 = sw[13];
-    assign led14 = sw[14];
-    
+    //Single LED on
+    assign led11 = sw[12];
+   
 endmodule
