@@ -1,0 +1,8 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/git/Basys-3-FPGA-projects/TestBench/TestBench.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+C:/git/Basys-3-FPGA-projects/TestBench/TestBench.srcs/sim_1/new/TB_OrGate.v,1674722669,verilog,,,,TB_AndGate,,,,,,,,
+C:/git/Basys-3-FPGA-projects/TestBench/TestBench.srcs/sources_1/new/AndGate.v,1674721567,verilog,,C:/git/Basys-3-FPGA-projects/TestBench/TestBench.srcs/sources_1/new/OrGate.v,,AndGate,,,,,,,,
+C:/git/Basys-3-FPGA-projects/TestBench/TestBench.srcs/sources_1/new/OrGate.v,1674722527,verilog,,C:/git/Basys-3-FPGA-projects/TestBench/TestBench.srcs/sim_1/new/TB_OrGate.v,,OrGate,,,,,,,,
