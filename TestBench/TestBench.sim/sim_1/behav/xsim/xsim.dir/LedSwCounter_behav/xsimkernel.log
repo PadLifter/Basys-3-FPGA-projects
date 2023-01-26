@@ -1,0 +1,7 @@
+Running: xsim.dir/LedSwCounter_behav/xsimk.exe -simmode gui -wdb LedSwCounter_behav.wdb -simrunnum 0 -socket 50186
+Design successfully loaded
+Design Loading Memory Usage: 7876 KB (Peak: 7876 KB)
+Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 8376 KB (Peak: 8376 KB)
+Simulation CPU Usage: 78 ms
